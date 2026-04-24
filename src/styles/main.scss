@@ -1,0 +1,17 @@
+.page:has(.page__menu:target) {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  color: red;
+}
+
+.bing {
+  color: purple;
+}
+
+.page-1 {
+  margin: auto;
+  color: aqua;
+}
