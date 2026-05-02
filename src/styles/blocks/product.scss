@@ -1,0 +1,55 @@
+.product {
+  padding-bottom: 0;
+
+  &__photo {
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+      @include hover(transform, scale(1.04));
+    }
+  }
+
+  &__title {
+    font-family: $main-text-font-family;
+    font-size: 16px;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+
+    @include onDesktop {
+      font-size: 18px;
+    }
+
+    a {
+      color: $main-text-color;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        text-shadow: 1px 1px 5px #292929;
+      }
+    }
+  }
+
+  &__price {
+    font-family: $main-text-font-family;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.item-link {
+  color: #292929;
+  text-decoration: none;
+  font-family: $main-text-font-family;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+
+  transition: text-shadow $effectDuration;
+
+  &:hover {
+    text-shadow: 1px 1px 5px #292929;
+  }
+}
